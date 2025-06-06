@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
+import { Roboto, Poppins} from "next/font/google";
 import "./globals.css";
 
 const roboto = Roboto({
@@ -8,6 +8,11 @@ const roboto = Roboto({
   weight: ["100","200","300","400","500","600","700","800"], 
 });
 
+const poppins = Poppins({
+  variable: "--font-poppins-variable",
+  subsets: ["latin"],
+  weight: ["100","200","300","400","500","600","700","800"], 
+});
 
 export const metadata: Metadata = {
   title: "Desafio Next.js",
@@ -23,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${roboto.variable} antialiased`}
+        className={`${roboto.variable} ${poppins.variable} antialiased`}
         suppressHydrationWarning
       >
         {children}

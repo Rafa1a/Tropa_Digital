@@ -24,3 +24,7 @@ body {
   color: var(--foreground);
   font-family: "Roboto", sans-serif;
 }
+
+.fontPoppins {
+  font-family: "Poppins", sans-serif;
+}

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
-
+import LottieLoading from "@/components/Lottieloading";
 export default function Card_Login({envemail, envpassword}:{envemail: string, envpassword: string}) {
     const [isPasswordVisible, setIsPasswordVisible] = React.useState(false);
     const [email, setEmail] = React.useState("");
@@ -111,9 +111,9 @@ export default function Card_Login({envemail, envpassword}:{envemail: string, en
                                     }
                                 }}
                             >
-                                    <p className="w-[36px] h-[15px] text-[13px] leading-[15px] font-medium text-white">
+                                    {loading?<LottieLoading/>:<p className="w-[36px] h-[15px] text-[13px] leading-[15px] font-medium text-white">
                                         Entrar
-                                    </p>
+                                    </p>}
                                 </div>
                             </div>
                         </div>
