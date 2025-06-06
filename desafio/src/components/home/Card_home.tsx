@@ -58,13 +58,13 @@ export default function CardHome() {
             <div className="flex flex-col w-full h-full px-[15px] gap-[7px]">
               <div className="flex flex-row w-full max-h-[35px] p-[10px] gap-[10px] cursor-pointer">
                 <Image
-                  src="/Dashboard.png"
-                  alt="Dashboard"
+                  src="/DashBoard.png"
+                  alt="DashBoard"
                   width={15}
                   height={15}
                 />
                 <p className="w-[68px] h-[15px] font-semibold text-[14px] leading-[15px] text-[#252525]  cursor-pointer">
-                  Dashboard
+                  DashBoard
                 </p>
               </div>
               <div className="flex flex-row w-full max-h-[35px] p-[10px] gap-[10px] rounded-[5px] bg-[#CC6237]  cursor-pointer">
