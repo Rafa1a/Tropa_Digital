@@ -2,9 +2,13 @@
 
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import LottieAstronaut from "@/components/LottieAstronaut";
 import Image from "next/image";
-
+import dynamic from "next/dynamic";
+// Importando o componente de loading dinâmico
+const LottieAstronaut = dynamic(
+  () => import("@/components/LottieAstronaut"),
+  { ssr: false }
+);
 export default function CardHome() {
   const [Login, setLogin] = useState("");
   const router = useRouter();

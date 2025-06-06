@@ -2,7 +2,14 @@
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React from "react";
-import LottieLoading from "@/components/Lottieloading";
+import dynamic from "next/dynamic";
+
+// Importando o componente de loading dinâmico
+const LottieLoading = dynamic(() => 
+    import("@/components/Lottieloading"), {
+    ssr: false,
+});
+
 export default function Card_Login({envemail, envpassword}:{envemail: string, envpassword: string}) {
     const [isPasswordVisible, setIsPasswordVisible] = React.useState(false);
     const [email, setEmail] = React.useState("");

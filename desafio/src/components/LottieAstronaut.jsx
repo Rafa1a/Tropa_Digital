@@ -3,7 +3,7 @@ import astronauta from '../../public/astronauta.json'
 
 export default function LottieAstronaut() { 
     return (
-      <div className='bg-white rounded-full '>
+      <div className='bg-white rounded-full'>
         <Player
             autoplay
             loop
