@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
-import Lottie from "@/components/lottie";
+import LottieAstronaut from "@/components/LottieAstronaut";
 import Image from "next/image";
 
 export default function CardHome() {
@@ -21,7 +21,7 @@ export default function CardHome() {
 
   if (!Login) {
     return (
-      <Lottie/>
+      <LottieAstronaut/>
     );
   }
   return (

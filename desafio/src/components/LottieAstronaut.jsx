@@ -1,7 +1,7 @@
 import { Player } from '@lottiefiles/react-lottie-player';
 import astronauta from '../../public/astronauta.json'
 
-export default function Lottie() { 
+export default function LottieAstronaut() { 
     return (
       <div className='bg-white rounded-full '>
         <Player
